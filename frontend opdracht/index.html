@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movietime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigatiebalk met logo en hamburgermenu -->
+<nav>
+    <img src="images/movielogo.png" alt="Movietime Logo">
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="mobile">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Films</a></li>
+        <li><a href="recensies.html">Recensies</a></li>
+        <li><a href="#">Vestigingen</a></li>
+        
+    </ul>
+</nav>
+ <!-- Welkomstsectie -->
+ <div class="welkom">
+    <h1>Welkom bij Movietime!</h1>
+    <p>Ontdek de laatste films en lees recensies van andere bezoekers.</p>
+</div>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector("nav ul.mobile");
+        menu.classList.toggle("active");
+    }
+    </script>
+    
+
+
+</body>
+</html>
